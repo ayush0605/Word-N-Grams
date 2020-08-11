@@ -32,6 +32,12 @@ public class WordGram {
         }
         return ret.trim();
     }
+    
+    public int hashCode(){
+        String res = this.toString();
+        int ans = res.hashCode();
+        return ans;
+    }
 
     public boolean equals(Object o) {
         WordGram other = (WordGram) o;
